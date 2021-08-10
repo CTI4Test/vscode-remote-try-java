@@ -9,7 +9,7 @@ ARG INSTALL_GRADLE="false"
 ARG GRADLE_VERSION=5.4.1
 RUN if [ "${INSTALL_MAVEN}" = "true" ]; then su vscode -c "source /usr/local/sdkman/bin/sdkman-init.sh && sdk install maven \"${MAVEN_VERSION}\""; fi \
     && if [ "${INSTALL_GRADLE}" = "true" ]; then su vscode -c "source /usr/local/sdkman/bin/sdkman-init.sh && sdk install gradle \"${GRADLE_VERSION}\""; fi
-
+test123
 # [Optional] Install a version of Node.js using nvm for front end dev
 ARG INSTALL_NODE="true"
 ARG NODE_VERSION="lts/*"
